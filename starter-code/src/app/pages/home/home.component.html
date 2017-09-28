@@ -1,0 +1,13 @@
+<h3> Cinema </h3>
+
+<ul>
+  <li *ngFor="let oneMovie of allTheMovies">
+    <img [src]="oneMovie.poster" />
+    <h4> {{ oneMovie.title }} </h4>
+
+    <a [routerLink]="['/movie', oneMovie.id]">
+    See Details
+    </a>
+
+  </li>
+</ul>
